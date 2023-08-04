@@ -1,0 +1,338 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 HelveticaNeue-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\f0\fs26 \cf0 \{\
+    "page": 2,\
+    "per_page": 6,\
+    "total": 12,\
+    "total_pages": 2,\
+    "data": [\
+        \{\
+            "id": 7,\
+            "email": "michael.lawson@reqres.in",\
+            "first_name": "Michael",\
+            "last_name": "Lawson",\
+            "avatar": "https://reqres.in/img/faces/7-image.jpg"\
+        \},\
+        \{\
+            "id": 8,\
+            "email": "lindsay.ferguson@reqres.in",\
+            "first_name": "Lindsay",\
+            "last_name": "Ferguson",\
+            "avatar": "https://reqres.in/img/faces/8-image.jpg"\
+        \},\
+        \{\
+            "id": 9,\
+            "email": "tobias.funke@reqres.in",\
+            "first_name": "Tobias",\
+            "last_name": "Funke",\
+            "avatar": "https://reqres.in/img/faces/9-image.jpg"\
+        \},\
+        \{\
+            "id": 10,\
+            "email": "byron.fields@reqres.in",\
+            "first_name": "Byron",\
+            "last_name": "Fields",\
+            "avatar": "https://reqres.in/img/faces/10-image.jpg"\
+        \},\
+        \{\
+            "id": 11,\
+            "email": "george.edwards@reqres.in",\
+            "first_name": "George",\
+            "last_name": "Edwards",\
+            "avatar": "https://reqres.in/img/faces/11-image.jpg"\
+        \},\
+        \{\
+            "id": 12,\
+            "email": "rachel.howell@reqres.in",\
+            "first_name": "Rachel",\
+            "last_name": "Howell",\
+            "avatar": "https://reqres.in/img/faces/12-image.jpg"\
+        \}\
+    ],\
+    "support": \{\
+        "url": "https://reqres.in/#support-heading",\
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"\
+    \}\
+\}\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 POST :  CREATE USER \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 !DOCTYPE html>\
+<html lang="en">\
+\
+<head>\
+    <!-- Google Tag Manager -->\
+    <script>\
+        ;(
+\f1\b function
+\f0\b0  (w, d, s, l, i) \{\
+                w[l] 
+\f1\b =
+\f0\b0  w[l] 
+\f1\b ||
+\f0\b0  []\
+                w[l].
+\f1\b push
+\f0\b0 (\{\
+                    'gtm.start': 
+\f1\b new
+\f0\b0  Date().
+\f1\b getTime
+\f0\b0 (),\
+                    event: 'gtm.js',\
+                \})\
+                var f 
+\f1\b =
+\f0\b0  d.
+\f1\b getElementsByTagName
+\f0\b0 (s)[0],\
+                    j 
+\f1\b =
+\f0\b0  d.
+\f1\b createElement
+\f0\b0 (s),\
+                    dl 
+\f1\b =
+\f0\b0  l 
+\f1\b !=
+\f0\b0  'dataLayer' 
+\f1\b ?
+\f0\b0  '&l=' 
+\f1\b +
+\f0\b0  l 
+\f1\b :
+\f0\b0  ''\
+                j.async 
+\f1\b =
+\f0\b0  
+\f1\b true
+\f0\b0 \
+                j.src 
+\f1\b =
+\f0\b0  'https://www.googletagmanager.com/gtm.js?id=' 
+\f1\b +
+\f0\b0  i 
+\f1\b +
+\f0\b0  dl\
+                f.parentNode.
+\f1\b insertBefore
+\f0\b0 (j, f)\
+            \})(window, document, 'script', 'dataLayer', 'GTM-KB622KF')\
+    </script>\
+    <!-- End Google Tag Manager -->\
+    <script src="https://js.stripe.com/v3/"></script>\
+    <meta charset="utf-8" />\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />\
+    <meta name="description" content="A hosted REST-API ready to respond to your AJAX requests" />\
+    <title>\
+        Reqres - A hosted REST-API ready to respond to your AJAX requests\
+    </title>\
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />\
+\
+    <link rel="stylesheet" href="/css/app.css" />\
+    <script type="text/javascript" src="//m.servedby-buysellads.com/monetization.custom.js"></script>\
+</head>\
+\
+<body>\
+    <div class="header-content">\
+        <header class="main-header">\
+            <section class="wrap">\
+                <h1 class="logo">\
+                    <a href="/"><img src="/img/logo.png" alt="" /></a>\
+                </h1>\
+            </section>\
+        </header>\
+        <main class="the-sell">\
+            <div class="wrap">\
+                <h2 class="tagline">\
+                    Test your front-end against a real API\
+                </h2>\
+                <section class="key-sells">\
+                    <div class="sell">\
+                        <div class="v-center">\
+                            <h3>Fake data</h3>\
+                            <p>\
+                                No more tedious sample data creation, we've\
+                                got it covered.\
+                            </p>\
+                        </div>\
+                        <i class="fa fa-cloud-download"></i>\
+                    </div>\
+                    <div class="sell">\
+                        <div class="v-center">\
+                            <h3>Real responses</h3>\
+                            <p>\
+                                Develop with real response codes. GET, POST,\
+                                PUT &amp; DELETE supported.\
+                            </p>\
+                        </div>\
+                        <i class="fa fa-code"></i>\
+                    </div>\
+                    <div class="sell">\
+                        <div class="v-center">\
+                            <h3>Always-on</h3>\
+                            <p>\
+                                24/7 <strong><em>free</em></strong> access\
+                                in your development phases. Go nuts.\
+                            </p>\
+                        </div>\
+                        <i class="fa fa-toggle-on"></i>\
+                    </div>\
+                </section>\
+                <h2 class="tagline">\
+                    A hosted REST-API ready to respond to your AJAX\
+                    requests.\
+                </h2>\
+                <div class="t-center main-arrow">\
+                    <i class="fa fa-arrow-circle-down"></i>\
+                </div>\
+                <script async type="text/javascript"\
+                    src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin" id="_carbonads_js"></script>\
+            </div>\
+        </main>\
+    </div>\
+    <div class="container">404</div>\
+    <footer>\
+        <div class="wrap">\
+            <hr class="dark" />\
+            <p class="t-center">\
+                Made for developers and designers by\
+                <a href="https://benhowdle.im">Ben Howdle</a>\
+            </p>\
+        </div>\
+    </footer>\
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js">\
+    </script>\
+    <script src="/js/app.js"></script>\
+    <!-- Global site tag (gtag.js) - Google Analytics -->\
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"></script>\
+    <script>\
+        window.dataLayer 
+\f1\b =
+\f0\b0  window.dataLayer 
+\f1\b ||
+\f0\b0  []\
+            
+\f1\b function
+\f0\b0  gtag() \{\
+                dataLayer.
+\f1\b push
+\f0\b0 (
+\f1\b arguments
+\f0\b0 )\
+            \}\
+            gtag('js', 
+\f1\b new
+\f0\b0  Date())\
+\
+            gtag('config', 'UA-174008107-1')\
+    </script>\
+    <script>\
+        ;(
+\f1\b function
+\f0\b0  (i, s, o, g, r, a, m) \{\
+                i['GoogleAnalyticsObject'] 
+\f1\b =
+\f0\b0  r\
+                ;(i[r] 
+\f1\b =
+\f0\b0 \
+                    i[r] 
+\f1\b ||
+\f0\b0 \
+                    
+\f1\b function
+\f0\b0  () \{\
+                        ;(i[r].q 
+\f1\b =
+\f0\b0  i[r].q 
+\f1\b ||
+\f0\b0  []).
+\f1\b push
+\f0\b0 (
+\f1\b arguments
+\f0\b0 )\
+                    \}),\
+                    (i[r].l 
+\f1\b =
+\f0\b0  1 
+\f1\b *
+\f0\b0  
+\f1\b new
+\f0\b0  Date())\
+                ;(a 
+\f1\b =
+\f0\b0  s.
+\f1\b createElement
+\f0\b0 (o)), (m 
+\f1\b =
+\f0\b0  s.
+\f1\b getElementsByTagName
+\f0\b0 (o)[0])\
+                a.async 
+\f1\b =
+\f0\b0  1\
+                a.src 
+\f1\b =
+\f0\b0  g\
+                m.parentNode.
+\f1\b insertBefore
+\f0\b0 (a, m)\
+            \})(\
+                window,\
+                document,\
+                'script',\
+                '//www.google-analytics.com/analytics.js',\
+                'ga'\
+            )\
+\
+            ga('create', 'UA-55888877-1', 'auto')\
+            ga('send', 'pageview')\
+    </script>\
+    <script>\
+        ;(
+\f1\b function
+\f0\b0  () \{\
+                
+\f1\b if
+\f0\b0  (
+\f1\b typeof
+\f0\b0  _bsa 
+\f1\b !==
+\f0\b0  'undefined' 
+\f1\b &&
+\f0\b0  _bsa) \{\
+                    _bsa.init(\
+                        'custom',\
+                        'CEBIP53J',\
+                        'placement:reqresin-sponsor',\
+                        \{\
+                            target: '#impeccable-js',\
+                            template: `\
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## \'97 ##tagline##">\
+        <img src="##logo##" style="background-color: ##backgroundColor##">\
+        <div class="sponsor-description">##description##</div>\
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>\
+        </a>\
+        `,\
+                        \}\
+                    )\
+                \}\
+            \})()\
+    </script>\
+</body>\
+\
+</html>\
+-0}
